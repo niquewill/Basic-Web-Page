@@ -1,35 +1,36 @@
 html * {
     color: #000 !important;
-    font-family: 'Roboto',
-        sans-serif;
+    font-family: 'Roboto', sans-serif;
      !important;
 }
 
 /*Body Container*/
-.cont
-#wrapper {
+
+.clearfix wrapper {
     text-align: left;
-    width: 760px;
-}
+    display: block;
+    position: relative;
+    float: left;
+    width: 60%;
+    overflow: auto;
+ }
 /* Header/Logo Title */
-/* .header h1 {
-    padding: 10px;
+.header, h1, img{
+    padding: 10px;;
+    position: absolute
     text-align: right;
     background: white;
     border-bottom: 10px #00830D double;
-    font-size: 15px;
-    display: inline-flexbox;
-} */
-.header h1 {
-    position: relative ;
-    margin: 0px 15px 10px ;
-    text-align: right;
+/*     margin: 0px 0px  10px; */
+/*     text-align: right; */
     font-size: 30px;
+/*     display: inline; */
 }
-.header img {
+img {
+    padding: 10px; 
     float: left;
-    width: 100px;
-    height: 10%;
+    width: 50px;
+    height: auto;
     background: transparent;
     border-radius: 85px 5px 85px;
 }
@@ -45,6 +46,10 @@ body {
     -moz-animation: Gradient 54s ease infinite;
     -o-animation: Gradient 54s ease infinite;
     animation: Gradient 54s ease infinite;
+}
+
+li {
+    list-style: none;
 }
     @-webkit-keyframes Gradient {
         0% {
